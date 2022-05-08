@@ -59,14 +59,16 @@ nav img{
     width: 100%;
 }
 
-.content{
-    text-align: left;
+#content{
+    float: left;
+    position: relative;
     color: #1f1f1f;
 }
 
-.wrap{
+#wrap{
+    float: left;
     width: 90%;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
