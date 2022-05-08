@@ -71,7 +71,7 @@ nav img{
 
 @media(max-width:700px){
     .nav-links ul li{
-        display: block;
+        display: inline-block;
     }
     .nav-links{
         position: absolute;
