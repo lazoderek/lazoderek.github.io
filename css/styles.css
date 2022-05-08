@@ -39,7 +39,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: #6d6d6d;
+    color: #3c3c3c;
     text-decoration: none;
     font-size: 13px;
 }
@@ -60,7 +60,7 @@ nav img{
 
 .text-box{
     width: 90%;
-    color: #6d6d6d;
+    color: #3c3c3c;
     position: absolute;
     top: 50%;
     left: 50%;
