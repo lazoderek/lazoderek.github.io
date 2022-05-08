@@ -5,8 +5,8 @@
     font-family: 'Courier New', Courier, monospace;
     font-size:13px;
     width: 800px;
-    border-left:1px solid #3c3c3c;
-    border-right:1px solid #3c3c3c;
+    border-left:1px solid #1f1f1f;
+    border-right:1px solid #1f1f1f;
 }
 
 .header{
@@ -33,7 +33,7 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: center;
-    border-bottom: 1px solid #3c3c3c;
+    border-bottom: 1px solid #1f1f1f;
 }
 
 .nav-links ul li{
@@ -44,7 +44,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: #3c3c3c;
+    color: #1f1f1f;
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ nav img{
     content: '';
     width: 0%;
     height: 1px;
-    background: #3c3c3c;
+    background: #1f1f1f;
     display: block;
     margin: auto;
     transition: 0.1s;
@@ -64,7 +64,7 @@ nav img{
 
 .text-box{
     width: 90%;
-    color: #3c3c3c;
+    color: #1f1f1f;
     position: absolute;
     top: 50%;
     left: 50%;
