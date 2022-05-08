@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    background: #6d6d6d;
+    background: #ffffff;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -56,4 +56,11 @@ nav img{
 
 .nav-links ul li:hover::after{
     width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+
 }
