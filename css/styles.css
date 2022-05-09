@@ -8,6 +8,8 @@
 
 .pixel-main img{
     max-width: 500px;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .header{
