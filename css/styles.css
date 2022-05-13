@@ -6,6 +6,13 @@
     font-size:13px;
 }
 
+body{
+    background-image: url("/images/camo-bg.png");
+    background-size: 6000px;
+    background-repeat: repeat;
+    background-position: center;
+}
+
 .header{
     border-bottom: 1px solid #1f1f1f;
     position: fixed;
@@ -97,4 +104,10 @@ nav img{
     height: 136px;
     border-top: 1px solid #1f1f1f;
     justify-content: center;
+  }
+
+  .design-main {
+    max-width: 800px;
+    margin-top: 250px;
+    margin-right: 25px;
   }
