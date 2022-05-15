@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   background: #ffffff;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
@@ -12,6 +11,8 @@ body {
   background-repeat: repeat;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 nav img {
@@ -39,28 +40,9 @@ nav img {
   text-decoration: none;
 }
 
-.nav-links ::after {
-  content: "";
-  width: 0%;
-  height: 1px;
-  background: #1f1f1f;
-  display: block;
-  margin: auto;
-  transition: 0.1s;
-}
-
-.nav-links :hover::after {
-  width: 100%;
-}
-
 .main a {
   color: #0000ff;
   text-decoration: none;
-}
-
-.main a:hover {
-  color: #0000ff;
-  text-decoration: underline;
 }
 
 .header {
@@ -72,11 +54,13 @@ nav img {
 
 .main {
   margin: 0 auto;
-  width: 100%;
   max-width: 630px;
   min-height: 100vh;
   border-left: 1px solid #1f1f1f;
   border-right: 1px solid #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pixel-main img {
@@ -117,28 +101,17 @@ nav img {
   justify-content: center;
 }
 
-.designs-main .grid {
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 60px;
-  padding-top: 200px;
-  padding-left: 20%;
-  padding-right: 70%;
-  background-color: transparent;
-  cursor: pointer;
-  max-width: 100px;
-}
-
 .grid {
   display: grid;
-  padding-top: 200px;
-  padding-left: 20%;
-  padding-right: 70%;
+  padding-top: 180px;
   padding-bottom: 210px;
   background-color: transparent;
   grid-template-columns: repeat(2, auto);
   grid-gap: 60px;
   cursor: pointer;
-  max-width: 100px;
+  max-width: max-content;
+
+  margin-left: -5px;
 }
 
 .designs-main img {
@@ -163,136 +136,145 @@ nav img {
   margin-bottom: -25px;
 }
 
-.designs-main .design-thumb:nth-child(5),
-.design-thumb:nth-child(6),
-.design-thumb:nth-child(10),
-.design-thumb:nth-child(11),
-.design-thumb:nth-child(13),
-.design-thumb:nth-child(14) {
-  margin-top: -11px;
-}
-
-.grid p {
-  grid-row: auto;
-  grid-column: 1/-1;
+.contact-links {
   text-align: left;
-  margin-bottom: -42px;
 }
 
-.designs-main .design-thumb:hover {
-    transform: scale(2);
-    border:solid 0.1px;
-}
-
-
-
-/*
-
-.designs-main grid {
-  background-color: transparent;
-  padding: 1rem;
-}
-
-.designs-main img {
-  max-width: 120px;
-  padding: 15px;
-  border: 1px solid rgb(79, 79, 79);
-}
-
-.designs-main .design-thumb:nth-child(2),
-.design-thumb:nth-child(3),
-.design-thumb:nth-child(7),
-.design-thumb:nth-child(8),
-.design-thumb:nth-child(10),
-.design-thumb:nth-child(11) {
-  margin-bottom: -25px;
-}
-
-.designs-main .design-thumb:nth-child(5),
-.design-thumb:nth-child(6),
-.design-thumb:nth-child(10),
-.design-thumb:nth-child(11),
-.design-thumb:nth-child(13),
-.design-thumb:nth-child(14) {
-  margin-top: -11px;
-}
-
-.grid {
-  display: grid;
-  padding-top: 200px;
-  padding-left: 20%;
-  padding-right: 70%;
-  background-color: transparent;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 60px;
-  cursor: pointer;
-  max-width: 100px;
-}
-
-.grid p {
-  grid-row: auto;
-  grid-column: 1/-1;
-  text-align: left;
-  margin-bottom: -42px;
-}
-
-.hide {
-  display: none;
-  position: absolute;
-  top: 0%;
-  left: 30%;
-  max-width: 200px;
-  height: auto;
+.contact-links img {
+  max-width: 20px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
-.grid img:nth-child(2):hover + .hide {
-  display: block;
+.contact-links a,
+a[href^="mailto:"] {
+  text-decoration: none;
 }
-*/
+
+.contact-links a:visited,
+a[href^="mailto:"] {
+  color: black;
+}
+
+.contact-main {
+  margin: 0 auto;
+  max-width: 630px;
+  min-height: 100vh;
+  border-left: 1px solid #1f1f1f;
+  border-right: 1px solid #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-submain img {
+  max-width: 400px;
+  margin-top: 250px;
+  margin-right: 25px;
+}
+
+.instagram-contact img {
+  max-width: 20px !important;
+}
+
+.contact-main h1 {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .designs-main .design-thumb:hover {
+    transform: scale(2);
+    border: solid 0.1px;
+  }
+
+  .nav-links ::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: #1f1f1f;
+    display: block;
+    margin: auto;
+    transition: 0.1s;
+  }
+
+  .nav-links :hover::after {
+    width: 100%;
+  }
+
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+
+  .main a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+  }
+}
 
 /* iphone mini */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  
-    .grid {
-    display: none;
+  body {
+    background: none;
+  }
+
+  .main {
+    border: none;
+    width: 100%;
   }
 
   .designs-main {
-      display: flex;
-      flex-direction: column;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .designs-main .design-main-subheaders {
+    margin-left: -100px;
   }
 
   .designs-main img {
-    max-width: 100%;
-    padding: 15px;
-    border: 1px solid rgb(79, 79, 79);
+    max-width: 70%;
+    border: none;
   }
 
-  html.index
-  body {
+  .design-main-subheaders p {
+    align-items: left;
+  }
+
+  html.index,
+  html.contact body {
+    margin-top: -10px;
     overflow-x: hidden;
+    position: fixed;
     overflow-y: hidden;
     touch-action: none;
     height: 100%;
+    width: 100%;
   }
 
-html.design{
-  overflow: hidden;
-  width: 100%;
-}
+  /* TODO */
+  html.tech,
+  html.art body{
+    touch-action: none;
+  }
 
-  html.design
-  body {
+  html.design body {
+    touch-action: pan-x pan-y;
     height: 100%;
     position: fixed;
     /* prevent overscroll bounce*/
-    background-color: lightgreen;
     overflow-y: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     /* iOS velocity scrolling */
-      
+  }
+
+  html.design {
+    overflow: hidden;
+    width: 100%;
   }
 
   body img {
@@ -327,9 +309,8 @@ html.design{
     margin-right: 10px;
   }
 
-  main {
-    border-left: 0px;
-    border-right: 0px;
+  html.contact .spikes-main img {
+    display: none;
   }
 
   .text-box p {
